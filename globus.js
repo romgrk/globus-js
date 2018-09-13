@@ -126,6 +126,7 @@ exports.deleteAccessRule = function(bearerToken, options) {
   return request(url, {
     auth: { bearer: bearerToken },
     method: 'DELETE',
+    json: true
   })
 }
 
@@ -143,6 +144,7 @@ exports.getActivationRequirements = function(bearerToken, options) {
 
   return request(url, {
     auth: { bearer: bearerToken },
+    json: true
   })
 }
 
@@ -161,6 +163,7 @@ exports.autoActivateEndpoint = function(bearerToken, options) {
   return request(url, {
     auth: { bearer: bearerToken },
     method: 'POST',
+    json: true
   })
 }
 
@@ -206,6 +209,7 @@ exports.deactivateEndpoint = function(bearerToken, options) {
   return request(url, {
     auth: { bearer: bearerToken },
     method: 'POST',
+    json: true
   })
 }
 
@@ -225,6 +229,7 @@ exports.getUserId = function(bearerToken, options) {
 
   return request(url, {
     auth: { bearer: bearerToken },
+    json: true
   })
 }
 
@@ -242,6 +247,7 @@ exports.getEndpointById = function(bearerToken, options) {
 
   return request(url, {
     auth: { bearer: bearerToken },
+    json: true
   })
 }
 
@@ -345,6 +351,7 @@ exports.deleteEndpointById = function(bearerToken, options) {
   return request(url, {
     auth: { bearer: bearerToken },
     method: 'DELETE',
+    json: true
   })
 }
 
@@ -361,6 +368,7 @@ exports.getEffectivePauseRuleList = function(bearerToken, options) {
 
   return request(url, {
     auth: { bearer: bearerToken },
+    json: true
   })
 }
 
@@ -378,6 +386,7 @@ exports.getEndpointServerList = function(bearerToken, options) {
 
   return request(url, {
     auth: { bearer: bearerToken },
+    json: true
   })
 }
 
@@ -397,6 +406,7 @@ exports.getEndpointServerById = function(bearerToken, options) {
 
   return request(url, {
     auth: { bearer: bearerToken },
+    json: true
   })
 }
 
@@ -480,6 +490,7 @@ exports.deleteEndpointServerById = function(bearerToken, options) {
   return request(url, {
     auth: { bearer: bearerToken },
     method: 'DELETE',
+    json: true
   })
 }
 
@@ -497,6 +508,7 @@ exports.getSharedEndpointList = function(bearerToken, options) {
 
   return request(url, {
     auth: { bearer: bearerToken },
+    json: true
   })
 }
 
@@ -521,6 +533,7 @@ exports.listDirectoryContents = function(bearerToken, options) {
 
   return request(url, {
     auth: { bearer: bearerToken },
+    json: true
   })
 }
 
@@ -587,6 +600,7 @@ exports.getSubmissionId = function(bearerToken) {
 
   return request(url, {
     auth: { bearer: bearerToken },
+    json: true
   })
 }
 
